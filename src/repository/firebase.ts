@@ -3,14 +3,16 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import { Game } from '../types/game';
 import { Player } from '../types/player';
+
+// Firebase config
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FB_API_KEY,
-  authDomain: process.env.REACT_APP_FB_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FB_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FB_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FB_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FB_APP_ID,
-  measurementId: process.env.REACT_APP_FB_MEASUREMENT_ID,
+  apiKey: 'AIzaSyBqM9p8t9mZvTzs3pN05pxH-06OKyGwvfM',
+  authDomain: 'pointpokerwebapp.firebaseapp.com',
+  projectId: 'pointpokerwebapp',
+  storageBucket: 'pointpokerwebapp.appspot.com',
+  messagingSenderId: 422748378964,
+  appId: '1:422748378964:web:143b0c4f308fb6dc005ac1',
+  measurementId: 'G-4ZQZQZQZQZ',
 };
 
 // Initialize Firebase
@@ -19,11 +21,13 @@ const gamesCollectionName = 'games';
 const playersCollectionName = 'players';
 const db = firebase.firestore();
 
+// Function to add a game to Firestore
 export const addGameToStore = async (gameId: string, data: any) => {
   await db.collection(gamesCollectionName).doc(gameId).set(data);
   return true;
 };
 
+// Function to get a game from Firestore
 export const getGameFromStore = async (id: string): Promise<Game | undefined> => {
   const response = db.collection(gamesCollectionName).doc(id);
   const result = await response.get();
@@ -34,6 +38,7 @@ export const getGameFromStore = async (id: string): Promise<Game | undefined> =>
   return game as Game;
 };
 
+// Function to get all players from a specific game
 export const getPlayersFromStore = async (gameId: string): Promise<Player[]> => {
   const db = firebase.firestore();
   const response = db.collection(gamesCollectionName).doc(gameId).collection(playersCollectionName);
@@ -43,6 +48,7 @@ export const getPlayersFromStore = async (gameId: string): Promise<Player[]> => 
   return players;
 };
 
+// Function to get a specific player from a specific game
 export const getPlayerFromStore = async (gameId: string, playerId: string): Promise<Player | undefined> => {
   const db = firebase.firestore();
   const response = db.collection(gamesCollectionName).doc(gameId).collection(playersCollectionName).doc(playerId);
@@ -54,35 +60,43 @@ export const getPlayerFromStore = async (gameId: string, playerId: string): Prom
   return player as Player;
 };
 
+// Function to get a real-time stream of a game's data
 export const streamData = (id: string) => {
   return db.collection(gamesCollectionName).doc(id);
 };
+
+// Function to get a real-time stream of a game's players
 export const streamPlayersFromStore = (id: string) => {
   return db.collection(gamesCollectionName).doc(id).collection(playersCollectionName);
 };
 
+// Function to update a game's data in Firestore
 export const updateGameDataInStore = async (gameId: string, data: any): Promise<boolean> => {
   const db = firebase.firestore();
   await db.collection(gamesCollectionName).doc(gameId).update(data);
   return true;
 };
 
+// Function to add a player to a game in Firestore
 export const addPlayerToGameInStore = async (gameId: string, player: Player) => {
   await db.collection(gamesCollectionName).doc(gameId).collection(playersCollectionName).doc(player.id).set(player);
   return true;
 };
 
+// Function to remove a player from a game in Firestore
 export const removePlayerFromGameInStore = async (gameId: string, playerId: string) => {
   await db.collection(gamesCollectionName).doc(gameId).collection(playersCollectionName).doc(playerId).delete();
   return true;
 };
 
+// Function to update a player's data in Firestore
 export const updatePlayerInStore = async (gameId: string, player: Player) => {
   await db.collection(gamesCollectionName).doc(gameId).collection(playersCollectionName).doc(player.id).update(player);
 
   return true;
 };
 
+// Function to remove a game from Firestore
 export const removeGameFromStore = async (gameId: string) => {
   await db.collection(gamesCollectionName).doc(gameId).delete();
   await db
@@ -98,6 +112,7 @@ export const removeGameFromStore = async (gameId: string) => {
   return true;
 };
 
+// Function to remove games older than 6 months from Firestore
 export const removeOldGameFromStore = async () => {
   const monthsToDelete = 6;
   const dateObj = new Date();
