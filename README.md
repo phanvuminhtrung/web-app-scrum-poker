@@ -1,5 +1,5 @@
 
-<h1 align="center">Planning Poker App</h1>
+<h1 align="center">Point Poker Web App</h1>
 
 - Open source Scrum/Agile Planning Poker Web App to estimate user stories for the Agile/Scrum teams. 
 - Create session and invite team members to estimate user stories efficiently. 
@@ -33,7 +33,7 @@
 1. Clone the repo
 
     ```bash
-    git clone https://github.com/hellomuthu23/planning-poker.git
+    git clone https://github.com/phanvuminhtrung/web-app-scrum-poker.git
     ```
 
 2. Run `yarn` command to install the required npm package.
