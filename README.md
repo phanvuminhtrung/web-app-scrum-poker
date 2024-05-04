@@ -1,7 +1,10 @@
 
 <h1 align="center">Planning Poker App</h1>
 
-Free / Open source Scrum/Agile Planning Poker Web App to estimate user stories for the Agile/Scrum teams. Create session and invite team members to estimate user stories efficiently. Intuitive UI/UX for voting the story points, showing team members voting status with emojis(👍 - Voting Done, 🤔 - Yet to Vote). Session Moderator has full control on revealing story points and restarting the session.
+Open source Scrum/Agile Planning Poker Web App to estimate user stories for the Agile/Scrum teams. 
+Create session and invite team members to estimate user stories efficiently. 
+Intuitive UI/UX for voting the story points, showing team members voting status with emojis(👍 - Voting Done, 🤔 - Yet to Vote).
+Session Moderator has full control on revealing story points and restarting the session.
 
 <div align="center">
   
@@ -12,15 +15,7 @@ Free / Open source Scrum/Agile Planning Poker Web App to estimate user stories f
 
 ## Live Site
 
-- <https://planning-poker-agile.web.app/>
-
-## Home Page
-
-<img src="docs/HomePage.jpg"  />
-
-## Active Session
-
-<img src="docs/ActiveSession.jpg"  />
+- <https://pointpokertroyphan.netlify.app/>
 
 ## Features
 
@@ -38,7 +33,7 @@ Free / Open source Scrum/Agile Planning Poker Web App to estimate user stories f
 1. React - Frontend
 2. Material-ui - UI Components
 3. Firestore - Database
-4. Firebase - Hosting
+4. Netlify - Hosting
 
 ## How to run the app locally for development
 
