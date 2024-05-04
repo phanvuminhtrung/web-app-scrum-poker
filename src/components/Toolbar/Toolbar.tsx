@@ -81,7 +81,7 @@ export const Toolbar = () => {
                 id='github-button'
                 color='inherit'
                 onClick={() =>
-                  (window.location.href = 'https://github.com/hellomuthu23/planning-poker')
+                  (window.location.href = 'https://github.com/phanvuminhtrung/web-app-scrum-poker')
                 }
               >
                 <GithubIcon></GithubIcon>
