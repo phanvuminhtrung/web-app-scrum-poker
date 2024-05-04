@@ -8,7 +8,7 @@
 
 ## Live Site
 
-- <https://pointpokertroyphan.netlify.app/>
+<https://pointpokertroyphan.netlify.app/>
 
 ## Features
 
