@@ -57,7 +57,6 @@
 2. Export options
 3. Preserve history of voting and show it in session
 4. Provide option to enter user story name
-5. Make the default Session name random
 
 ## Tech Depts
 
