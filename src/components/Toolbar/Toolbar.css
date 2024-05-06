@@ -13,10 +13,6 @@
   width: 100%;
 }
 
-.button:hover {
-  color: #FCDC2A;
-}
-
 .HeaderLeftContainer {
   display: flex;
   justify-content: space-between;
@@ -34,4 +30,8 @@
 
 .toolbar-button:hover {
   color: #FCDC2A;
+}
+
+.toolbar-button.active {
+  color: #FCDC2A; 
 }
