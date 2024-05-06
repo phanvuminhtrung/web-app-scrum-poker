@@ -3,6 +3,7 @@
   min-width: 120px;
   margin: 10px;
   margin-top: 40px;
+  margin-bottom: 10%;
   overflow: initial;
   background-color: var(--color-background);
   transition: 0.3s;
@@ -32,12 +33,15 @@
 
 .RecentGamesTableContainer {
   max-height: 250px;
+  overflow: auto;
 }
 
 .RecentGamesTableRow {
   cursor: pointer;
+  overflow: auto;
 }
 
 .RecentGamesCardContent {
   text-align: center;
+  overflow: auto;
 }

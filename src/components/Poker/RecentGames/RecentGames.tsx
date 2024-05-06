@@ -69,7 +69,7 @@ export const RecentGames = () => {
         {isEmptyRecentGames() && <Typography variant='body2'>No recent sessions found</Typography>}
         {recentGames && recentGames.length > 0 && (
           <TableContainer className='RecentGamesTableContainer'>
-            <Table stickyHeader>
+            <Table>
               <TableHead>
                 <TableRow>
                   <TableCell>Name</TableCell>
