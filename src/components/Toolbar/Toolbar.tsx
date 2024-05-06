@@ -25,8 +25,7 @@ export const Toolbar = () => {
         <AppToolbar>
           <div className='HeaderContainer'>
             <div className='HeaderLeftContainer' onClick={() => window.open('https://troyphan.com/', '_blank')}>
-              <GamesIcon className='HeaderIcon' />
-              <Typography variant={isSmallScreen ? 'subtitle1' : 'h5'} color='inherit' noWrap>
+              <Typography variant={isSmallScreen ? 'subtitle1' : 'h5'} color='inherit' className="toolbar-button" noWrap>
                 {title}
               </Typography>
             </div>
@@ -37,6 +36,7 @@ export const Toolbar = () => {
                 color='inherit'
                 onClick={() => history.push('/')} 
                 data-testid='toolbar.menu.home'
+                className="toolbar-button"
               >
                 {!isSmallScreen ? t('toolbar.menu.home') : null}
               </Button>
@@ -46,6 +46,7 @@ export const Toolbar = () => {
                 color='inherit'
                 onClick={() => history.push('/')}
                 data-testid='toolbar.menu.newSession'
+                className="toolbar-button"
               >
                 {!isSmallScreen ? t('toolbar.menu.newSession') : null}
               </Button>
@@ -56,12 +57,14 @@ export const Toolbar = () => {
                 color='inherit'
                 onClick={() => history.push('/join')}
                 data-testid='toolbar.menu.joinSession'
+                className="toolbar-button"
               >
                 {!isSmallScreen ? t('toolbar.menu.joinSession') : null}
               </Button>
               <Button
                 id='github-button'
                 color='inherit'
+                className="toolbar-button"
                 onClick={() =>
                   (window.location.href = 'https://github.com/phanvuminhtrung/web-app-scrum-poker')
                 }

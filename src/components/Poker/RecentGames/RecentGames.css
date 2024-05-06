@@ -7,7 +7,6 @@
   background-color: var(--color-background);
   transition: 0.3s;
   border-radius: 4px;
-  
 }
 @media (max-width: 480px) {
   .RecentGamesCard {

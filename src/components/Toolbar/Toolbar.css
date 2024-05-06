@@ -1,23 +1,37 @@
 .AppBar {
   box-shadow: none;
-  background-color:  var(--color-background);
+  background-color:  #333;
   flex-grow: 1;
   white-space: nowrap;
+  color: var(--color-text-white);
 }
 
 .HeaderContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
+}
+
+.button:hover {
+  color: #FCDC2A;
 }
 
 .HeaderLeftContainer {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
 }
 
 .HeaderIcon {
   color: var(--color-primary);
-  margin-top: 4px;
-  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toolbar-button:hover {
+  color: #FCDC2A;
 }

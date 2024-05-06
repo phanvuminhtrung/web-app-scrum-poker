@@ -136,14 +136,14 @@ export const CreateGame = () => {
               ) => setGameType(event.target.value)}
             >
               <FormControlLabel
-                value={GameType.TenDigit}
-                control={<Radio color='primary' size='small' />}
-                label='Ten-Digit (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)'
-              />
-              <FormControlLabel
                 value={GameType.ShortFibonacci}
                 control={<Radio color='primary' size='small' />}
                 label='Fibonacci (0, 1, 2, 3, 5, 8, 13, 20)'
+              />
+              <FormControlLabel
+                value={GameType.TenDigit}
+                control={<Radio color='primary' size='small' />}
+                label='Ten-Digit (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)'
               />
               <FormControlLabel
                 value={GameType.Custom}

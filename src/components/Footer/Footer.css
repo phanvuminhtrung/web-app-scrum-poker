@@ -7,6 +7,7 @@
   color: #fff; 
   padding: 10px 20px;
   font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
 
 .footer .divider {
@@ -14,4 +15,13 @@
   height: 20px;
   border-left: 1px solid #fff;
   align-self: center;
+}
+
+.footer a {
+  color: var(--color-text-white);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #FCDC2A;
 }
