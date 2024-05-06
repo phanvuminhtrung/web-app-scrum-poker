@@ -8,3 +8,10 @@
   padding: 10px 20px;
   font-family: Helvetica, Arial, sans-serif;
 }
+
+.footer .divider {
+  margin: 0 20px;
+  height: 20px;
+  border-left: 1px solid #fff;
+  align-self: center;
+}

@@ -9,11 +9,11 @@ import { useTranslation } from 'react-i18next';
 
 export const LanguageControl: React.FC = () => {
   const { i18n } = useTranslation();
-  const [language, setLanguage] = useState('en-US');
+  const [language, setLanguage] = useState('en-AU');
 
   useEffect(() => {
-    setLanguage(i18n.language);
-  }, [i18n.language]);
+    i18n.changeLanguage('en-AU');
+  }, [i18n]);
 
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
     setLanguage(event.target.value as string);
@@ -30,9 +30,8 @@ export const LanguageControl: React.FC = () => {
         className='LanguageControlSelect'
         data-testid='language-control'
       >
-        <MenuItem value={'en-US'}>{getUnicodeFlagIcon('US')}</MenuItem>
-        <MenuItem value={'pt-BR'}>{getUnicodeFlagIcon('BR')}</MenuItem>
-        <MenuItem value={'zh-Hant'}>{getUnicodeFlagIcon('HK')}</MenuItem>
+        <MenuItem value={'en-AU'}>{getUnicodeFlagIcon('AU')}</MenuItem>
+        <MenuItem value={'vi-VN'}>{getUnicodeFlagIcon('VN')}</MenuItem>
       </Select>
     </FormControl>
   );

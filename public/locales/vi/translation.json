@@ -1,0 +1,22 @@
+{
+    "toolbar": {
+      "menu": {
+        "about": "Planning poker là gì?",
+        "guide": "Hướng dẫn",
+        "examples": "Ví dụ",
+        "newSession": "Phiên mới",
+        "joinSession": "Tham gia phiên"
+      }
+    },
+    "HomePage": {
+      "heroSection": {
+        "title": "Ứng dụng Planning Poker miễn phí",
+        "description": "Ứng dụng web Planning Poker miễn phí / mã nguồn mở để ước lượng câu chuyện người dùng cho các nhóm Agile/Scrum của bạn. Tạo một phiên và mời các thành viên trong nhóm của bạn để ước lượng câu chuyện người dùng một cách hiệu quả.",
+        "formNewSession": {
+          "newSessionHeader": "Tạo phiên mới",
+          "sessionNameLabel": "Tên phiên",
+          "yourNameLabel": "Tên của bạn"
+        }
+      }
+    }
+  }
