@@ -6,15 +6,13 @@ import GamesIcon from '@material-ui/icons/Games';
 import GithubIcon from '@material-ui/icons/GitHub';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import MergeTypeOutlinedIcon from '@material-ui/icons/MergeTypeOutlined';
-import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
-import BookOutlinedIcon from '@material-ui/icons/MenuBookOutlined';
-import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
+import HomeIcon from '@material-ui/icons/Home';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './Toolbar.css';
 import { useTranslation } from 'react-i18next';
 import { LanguageControl } from '../LanguageControl/LanguageControl';
-export const title = 'Planning Poker';
+export const title = 'Point Poker Tool | Troy Phan';
 
 export const Toolbar = () => {
   const history = useHistory();
@@ -26,7 +24,7 @@ export const Toolbar = () => {
       <AppBar position='sticky' className='AppBar'>
         <AppToolbar>
           <div className='HeaderContainer'>
-            <div className='HeaderLeftContainer' onClick={() => history.push('/')}>
+            <div className='HeaderLeftContainer' onClick={() => window.open('https://troyphan.com/', '_blank')}>
               <GamesIcon className='HeaderIcon' />
               <Typography variant={isSmallScreen ? 'subtitle1' : 'h5'} color='inherit' noWrap>
                 {title}
@@ -34,28 +32,13 @@ export const Toolbar = () => {
             </div>
             <div>
               <Button
-                title={t('toolbar.menu.about')}
-                startIcon={<InfoOutlinedIcon />}
+                title={t('toolbar.menu.home')}
+                startIcon={<HomeIcon />}
                 color='inherit'
-                onClick={() => history.push('/about-planning-poker')}
+                onClick={() => history.push('/')} 
+                data-testid='toolbar.menu.home'
               >
-                {!isSmallScreen ? t('toolbar.menu.about') : null}
-              </Button>
-              <Button
-                title={t('toolbar.menu.guide')}
-                startIcon={<SearchOutlinedIcon />}
-                color='inherit'
-                onClick={() => history.push('/guide')}
-              >
-                {!isSmallScreen ? t('toolbar.menu.guide') : null}
-              </Button>
-              <Button
-                title={t('toolbar.menu.examples')}
-                startIcon={<BookOutlinedIcon />}
-                color='inherit'
-                onClick={() => history.push('/examples')}
-              >
-                {!isSmallScreen ? t('toolbar.menu.examples') : null}
+                {!isSmallScreen ? t('toolbar.menu.home') : null}
               </Button>
               <Button
                 title={t('toolbar.menu.newSession')}
@@ -76,7 +59,6 @@ export const Toolbar = () => {
               >
                 {!isSmallScreen ? t('toolbar.menu.joinSession') : null}
               </Button>
-
               <Button
                 id='github-button'
                 color='inherit'

@@ -1,6 +1,7 @@
 {
   "toolbar": {
     "menu": {
+      "home": "Home",
       "about": "What is planning poker?",
       "guide": "Guide",
       "examples": "Examples",
