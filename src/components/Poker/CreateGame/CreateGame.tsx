@@ -136,24 +136,14 @@ export const CreateGame = () => {
               ) => setGameType(event.target.value)}
             >
               <FormControlLabel
-                value={GameType.Fibonacci}
+                value={GameType.TenDigit}
                 control={<Radio color='primary' size='small' />}
-                label='Fibonacci (0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89)'
+                label='Ten-Digit (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)'
               />
               <FormControlLabel
                 value={GameType.ShortFibonacci}
                 control={<Radio color='primary' size='small' />}
-                label='Short Fibonacci (0, ½, 1, 2, 3, 5, 8, 13, 20, 40, 100)'
-              />
-              <FormControlLabel
-                value={GameType.TShirt}
-                control={<Radio color='primary' size='small' />}
-                label='T-Shirt (XXS, XS, S, M, L, XL, XXL)'
-              />
-              <FormControlLabel
-                value={GameType.TShirtAndNumber}
-                control={<Radio color='primary' size='small' />}
-                label='T-Shirt & Numbers (S, M, L, XL, 1, 2, 3, 4, 5)'
+                label='Fibonacci (0, 1, 2, 3, 5, 8, 13, 20)'
               />
               <FormControlLabel
                 value={GameType.Custom}

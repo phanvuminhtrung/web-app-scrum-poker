@@ -26,6 +26,7 @@ export interface NewGame {
 
 export enum GameType {
   Fibonacci = 'Fibonacci',
+  TenDigit = '10 Digit',
   ShortFibonacci = 'ShortFibonacci',
   TShirt = 'TShirt',
   TShirtAndNumber = 'TShirtAndNumber',

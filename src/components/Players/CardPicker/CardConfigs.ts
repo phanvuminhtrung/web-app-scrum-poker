@@ -21,9 +21,24 @@ export const fibonacciCards: CardConfig[] = [
   { value: -1, displayValue: '-1', color: 'var(--color-background-secondary)' },
 ];
 
+export const tenDigitCards: CardConfig[] = [
+  { value: 0, displayValue: '0', color: 'var(--color-background-secondary)' },
+  { value: 1, displayValue: '1', color: '#9EC8FE' },
+  { value: 2, displayValue: '2', color: '#9EC8FE' },
+  { value: 3, displayValue: '3', color: '#A3DFF2' },
+  { value: 5, displayValue: '4', color: '#A3DFF2' },
+  { value: 8, displayValue: '5', color: '#9DD49A' },
+  { value: 13, displayValue: '6', color: '#9DD49A' },
+  { value: 21, displayValue: '7', color: '#F4DD94' },
+  { value: 34, displayValue: '8', color: '#F4DD94' },
+  { value: 55, displayValue: '9', color: '#F39893' },
+  { value: 89, displayValue: '10', color: '#F39893' },
+  { value: -2, displayValue: '❓', color: 'var(--color-background-secondary)' },
+  { value: -1, displayValue: '-1', color: 'var(--color-background-secondary)' },
+];
+
 export const shortFibonacciCards: CardConfig[] = [
   { value: 0, displayValue: '0', color: 'var(--color-background-secondary)' },
-  { value: 0.5, displayValue: '½', color: '#9EC8FE' },
   { value: 1, displayValue: '1', color: '#9EC8FE' },
   { value: 2, displayValue: '2', color: '#9EC8FE' },
   { value: 3, displayValue: '3', color: '#A3DFF2' },
@@ -31,8 +46,6 @@ export const shortFibonacciCards: CardConfig[] = [
   { value: 8, displayValue: '8', color: '#9DD49A' },
   { value: 13, displayValue: '13', color: '#9DD49A' },
   { value: 21, displayValue: '20', color: '#F4DD94' },
-  { value: 34, displayValue: '40', color: '#F4DD94' },
-  { value: 55, displayValue: '100', color: '#F39893' },
   { value: -2, displayValue: '❓', color: 'var(--color-background-secondary)' },
   { value: -1, displayValue: '-1', color: 'var(--color-background-secondary)' },
 ];
@@ -71,6 +84,8 @@ export const getCards = (gameType: GameType | undefined): CardConfig[] => {
       return tShirtCards;
     case GameType.TShirtAndNumber:
       return tShirtAndNumbersCards;
+    case GameType.TenDigit:
+      return tenDigitCards;
     default:
       return fibonacciCards;
   }
