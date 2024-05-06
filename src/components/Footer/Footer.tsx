@@ -7,7 +7,7 @@ export const Footer = () => {
     <footer className="footer">
       <Box display="flex" justifyContent="center" alignItems="center" p={1}>
         <Typography variant="body2" align="center">
-          COPYWRITE © 2024 TROY PHAN.
+          COPYWRITE © 2024 TROY PHAN 
         </Typography>
         <Divider className="divider" orientation='vertical' flexItem />
         <Typography variant='body2'>
