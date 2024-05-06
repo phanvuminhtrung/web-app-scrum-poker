@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Link, Box, Divider } from '@material-ui/core';
+import { Typography, Box, Divider } from '@material-ui/core';
 import './Footer.css';  // Ensure your CSS is correctly linked
 
 export const Footer = () => {
