@@ -4,16 +4,26 @@ import 'firebase/firestore';
 import { Game } from '../types/game';
 import { Player } from '../types/player';
 
+
 // Firebase config
 const firebaseConfig = {
-  apiKey: 'AIzaSyBqM9p8t9mZvTzs3pN05pxH-06OKyGwvfM',
-  authDomain: 'pointpokerwebapp.firebaseapp.com',
-  projectId: 'pointpokerwebapp',
-  storageBucket: 'pointpokerwebapp.appspot.com',
-  messagingSenderId: 422748378964,
-  appId: '1:422748378964:web:143b0c4f308fb6dc005ac1',
-  measurementId: 'G-4ZQZQZQZQZ',
+  apiKey: process.env.REACT_APP_FB_API_KEY,
+  authDomain: process.env.REACT_APP_FB_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FB_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FB_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FB_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FB_APP_ID,
+  measurementId: process.env.REACT_APP_FB_MEASUREMENT_ID,
 };
+// const firebaseConfig = {
+//   apiKey: 'AIzaSyBqM9p8t9mZvTzs3pN05pxH-06OKyGwvfM',
+//   authDomain: 'pointpokerwebapp.firebaseapp.com',
+//   projectId: 'pointpokerwebapp',
+//   storageBucket: 'pointpokerwebapp.appspot.com',
+//   messagingSenderId: 422748378964,
+//   appId: '1:422748378964:web:143b0c4f308fb6dc005ac1',
+//   measurementId: 'G-4ZQZQZQZQZ',
+// };
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
