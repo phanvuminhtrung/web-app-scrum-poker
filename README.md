@@ -59,8 +59,8 @@
 
 ## To-do-list
 
-1. Setup firestore authentication and config on netlify
-2. Change theme color to become grey, black, yellow
+1. Setup firestore authentication and config on netlify (DONE)
+2. Change theme color to become grey, black, yellow 
 3. Outline the card and voting session to make it display as grid
 4. Adding observation mode
 5. Remove redundant icon or question mark voting
