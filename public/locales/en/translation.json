@@ -11,8 +11,8 @@
   },
   "HomePage": {
     "heroSection": {
-      "title": "Free Planning Poker App",
-      "description": "Free / Open source Planning Poker Web App to estimate user stories for your Agile/Scrum teams. Create a session and invite your team members to estimate user stories efficiently.",
+      "title": "Pointing Poker",
+      "description": "Explore the capabilities of our Point Poker Web App, freely available for your use. Please don't hesitate to contact me with any questions or if you're interested in collaboration opportunities.",
       "formNewSession": {
         "newSessionHeader": "Create new session",
         "sessionNameLabel": "Session name",
