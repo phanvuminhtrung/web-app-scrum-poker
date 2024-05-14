@@ -87,7 +87,7 @@ export const getCards = (gameType: GameType | undefined): CardConfig[] => {
     case GameType.TenDigit:
       return tenDigitCards;
     default:
-      return fibonacciCards;
+      return shortFibonacciCards;
   }
 };
 
