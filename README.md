@@ -1,5 +1,5 @@
 
-<h1 align="center">Point Poker Tool/h1>
+<h1 align="center">Point Poker Tool</h1>
 
 - Open source Scrum/Agile Planning Poker Web App to estimate user stories for the Agile/Scrum teams. 
 - Create session and invite team members to estimate user stories efficiently. 
